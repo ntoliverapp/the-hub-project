@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to The Hub</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<header id="header">
+    <div id="logo">
+        <p>THE HUB</p>
+    </div>
+</header>
+<body class="login">
+
+    <div class="container" id="login-text">
+        <h1 class="text-center">Login</h1>
+        <p>Welcome to THE HUB.</p>
+        <form action="campaign.html" class="loginForm" id="login-form">
+            <div class='input-group'>
+                <label for="username" class="label"><b>Username:</b></label>
+                <input type="text" id="username" class="input">
+                <span class="error-message"></span>
+            </div>
+            <div class='input-group'>
+                <label for="password" class="label"><b>Password:</b></label>
+                <input type="password" id="password" class="password">
+                <span class="error-message"></span>
+            </div>
+            <br>
+            <button class="button" type="submit">Login</button>
+        </form>
+    </div>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>
