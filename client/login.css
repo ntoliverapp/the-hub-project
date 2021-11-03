@@ -1,0 +1,46 @@
+header{
+    background-color: #407BA7;
+    height: 10vh;
+    width: 100vw;
+    display: grid;
+    grid-template-areas:
+    "logo navbar";
+    align-items: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 16pt;
+    font-weight: 300;
+    /* position: fixed; */
+    top:0;
+}
+body{
+    background-image: linear-gradient(to bottom, #407BA7 , white);
+    height: 1000px;
+}
+
+#login-text{
+display: grid;
+justify-content: center;
+font-family: Helvetica, sans-serif;
+    font-size: 14pt;
+    font-weight: 300;
+
+}
+button{
+    border-radius: 1.5em 1.5em 1.5em 1.5em;
+    padding: 0 10px;
+    width: 10em;
+    line-height:3em;
+    color:black;
+    background-color:white;  
+    border-color:black;
+    font-size: 11pt;
+}
+
+button:hover{
+ background-color:#0466C8;
+ color: white;
+ border-color: white;
+}
+p{
+    justify-content: center;
+}
