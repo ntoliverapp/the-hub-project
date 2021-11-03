@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="reports.css" rel="stylesheet" type="text/css"/> 
+    <title>Reports</title>
+</head>
+<header id="header">
+    <div id="logo">
+        <p>THE HUB</p>
+    </div>
+	<div id='navbar'>
+        <p id="campaign"><a href="./campaign.html">Profile</a></p> 
+	    <p id="account"><a href="./reports.html">Reports</a></p>
+        <p id="log-lot"><a href="./login.html">Log Out</a></p>
+        <img id="nav-profile-pic" src="profile_pic.jpg"  alt="profile-pic">
+    </div>
+</header>
+<body>
+    <section>
+        <div class='wrapper'>
+            <form>
+                <h2>NIGHTLY REPORT FORM:</h2>
+                <h4>Please enter your nightly reports below</h4><br>
+                <div>
+                    <form>
+                        <input type="text" placeholder='First Name' id='first-name'><br>
+                        <input type="text" placeholder='Last Name' id='last-name'><br>
+                        <input type="text" placeholder='Organization' id='organization'><br>
+                        <input type="date" id='date'><br>
+                        <input type="text" placeholder='Total Hours' id='hours'><br>
+                        <input type="text" placeholder='Total Contacts' id='contacts'><br>
+                        <input type="text" placeholder='Total Yes Ids' id='yes-id'><br>
+                        <input type="text" placeholder='Total Volunteers' id='volunteer'><br>
+                        <input type="text" placeholder='Total Opt In Texts' id='opt-in-text'><br>
+                        <input type="text" placeholder='Total Opt In Emails' id='opt-in-email'><br>
+                        
+                
+                            Highlights:
+                        <input type="textarea" id='highlights'><br>
+                
+                            Challenges:
+                        <input type="textarea" id='challenges'><br>
+                
+                        <button id="submit-btn">Submit Report</button>
+                </form>
+        </div>
+    </section>
+    <section id = 'reports-container'></section>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    
+    <script src="./reports.js"></script>
+</body>
+    
+</html>
