@@ -19,6 +19,7 @@ Version 1.0
 * Javascript 
 * Node.js
 * JSON
+* Express
 
 # Installing and Running 'The HUB' Locally
 
