@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login to The Hub</title>
-    <!-- <link rel="stylesheet" href="login.css"> -->
-    <link href="/css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="login.css">
+    <!-- <link href="/css" rel="stylesheet" type="text/css"/> -->
 </head>
 <header id="header">
     <div id="logo">
@@ -17,15 +18,15 @@
 
     <div class="container" id="login-text">
         <h1 class="text-center">Login</h1>
-        <p>Welcome to THE HUB.</p>
+        <p>Welcome to THE HUB. The HUB is a centralized <br>space for all of your campaign needs. <br>Please sign in with your information below.</p>
         <form action="campaign.html" class="loginForm" id="login-form">
             <div class='input-group'>
-                <label for="username" class="label"><b>Username:</b></label>
+                <label for="username" class="label"><i class="fa fa-gear fa-spin" style="font-size:24px;color:white"></i> <b> Username:</b></label>
                 <input type="text" id="username" class="input">
                 <span class="error-message"></span>
             </div>
             <div class='input-group'>
-                <label for="password" class="label"><b>Password:</b></label>
+                <label for="password" class="label"><i class="fa fa-gear fa-spin" style="font-size:24px;color:white"></i> <b>Password:</b></label>
                 <input type="password" id="password" class="password">
                 <span class="error-message"></span>
             </div>
@@ -34,7 +35,7 @@
         </form>
     </div>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <!-- <script src="login.js"></script> -->
-    <script src="/js"></script>
+    <script src="login.js"></script>
+    <!-- <script src="/js"></script> -->
 </body>
 </html>

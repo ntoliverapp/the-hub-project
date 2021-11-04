@@ -1,5 +1,5 @@
 header{
-    background-color: #407BA7;
+    background-color: white;
     height: 10vh;
     width: 100vw;
     display: grid;
@@ -11,10 +11,31 @@ header{
     font-weight: 300;
     /* position: fixed; */
     top:0;
+    color: black;
 }
 body{
-    background-image: linear-gradient(to bottom, #407BA7 , white);
+    background-color: white;
     height: 1000px;
+}
+
+#logo{
+    margin-left: 15px;
+}
+
+#login-form{
+    border: 4px solid black;
+    padding: 60px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 16pt;
+}
+
+.loginForm{
+    transition: all 0.7s ease-in-out;
+}
+.loginForm:hover{
+    transition: all 0.7s ease-in-out;
 }
 
 #login-text{
@@ -37,7 +58,7 @@ button{
 }
 
 button:hover{
- background-color:#0466C8;
+ background-color:black;
  color: white;
  border-color: white;
 }

@@ -13,7 +13,7 @@ const challenges = document.getElementById('challenges');
 const submitBtn = document.getElementById('submit-btn');
 
 const inputField = document.querySelectorAll("input");
-const reportForm = document.querySelector('form');
+// const reportForm = document.querySelector('form');
 
 const reportsContainer = document.querySelector('#reports-container');
 const form = document.querySelector('form');
@@ -32,6 +32,7 @@ submitBtn.addEventListener("click", () => {
 
 
 const reportsCallback = ({ data: reports }) => displayReports(reports);
+
 const errCallback = err => console.log(err);
 
 const getAllReports = () => axios.get(baseURL).then(reportsCallback).catch(errCallback);

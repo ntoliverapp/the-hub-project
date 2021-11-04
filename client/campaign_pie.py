@@ -11,13 +11,13 @@ slices = [70,13,10,7]
 labels = ['Yes', 'Undecided', 'No',  'Refused']
 colors = ['#85cb33', '#fcca46', '#e7390d', '#9d0208']
 
-plt.pie(slices, labels=labels, colors=colors, wedgeprops={'edgecolor': 'white'})
+plt.pie(slices, autopct='%1.1f%%', labels=labels, colors=colors, wedgeprops={'edgecolor': 'white'})
 
-plt.tight_layout()
-# # plt.savefig('campaign_pie.png')
+# plt.tight_layout()
+# plt.savefig('campaign_pie.png')
 # mpld3.show()
 mpld3.save_html(fig, "campaign_pie.html")
-# # plt.show()
+# plt.show()
 
 
 

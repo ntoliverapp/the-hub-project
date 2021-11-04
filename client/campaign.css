@@ -1,3 +1,4 @@
+
 header{
     background-color: white;
     height: 10vh;
@@ -9,8 +10,9 @@ header{
     font-family: Helvetica, sans-serif;
     font-size: 16pt;
     font-weight: 300;
-    position: fixed;
+    position: sticky;
     top:0;
+    z-index: 2;
 }
 
 body{
@@ -38,6 +40,12 @@ body{
     font-weight: 300;
 }
 
+a{
+    color: grey;
+    font-weight: 500;
+    font-size: 20pt;
+}
+
 #campaign{
     grid-area: campaign;
     font-family: Helvetica, sans-serif;
@@ -60,9 +68,17 @@ body{
 }
 
 #main-profile-pic{
-    height: 400px;
-    width: 400px;
+    height: 350px;
+    width: 350px;
     border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+}
+#main-profile-pic:hover{
+    -moz-box-shadow:    3px 3px 5px 6px grey;
+    -webkit-box-shadow: 3px 3px 5px 6px grey;
+    box-shadow:         3px 3px 5px 6px grey;
+    transition: all 0.3s ease-in-out;
+    
 }
 
 h1{
@@ -96,6 +112,7 @@ h5{
     font-weight: 600;
 }
 
+
 .wrapper{
     display:grid;
     grid-template-columns: repeat(2, 0.8fr);
@@ -128,7 +145,11 @@ h3{
     width: 500px;
     background-color: black;
     border-radius: 25px;
+    
 }
+/* .progress:hover{
+    transform: scale(1.1);
+} */
 
 .progress-done{
     height: 100%;
@@ -148,7 +169,27 @@ h3{
     border-radius: 25px;
     padding: 20px;
     background-color: white;
+    transition: all 1s ease-in-out;
     color: black;
+}
+#bg:hover{
+    transform: scale(1.05);
+    transition: all 1s ease-in-out;
+    box-shadow: 2px 12px 2px 1px grey;
+}
+#fig_el142141402708265418887551933997{
+    transition: all 1s ease-in-out;
+}
+#fig_el142141402708265418887551933997:hover{
+    transform: scale(0.9);
+    transition: all 1s ease-in-out;
+}
+#fig_el325561404520378285607369197345{
+    transition: all 1s ease-in-out;
+}
+#fig_el325561404520378285607369197345:hover{
+    transform: scale(0.9);
+    transition: all 1s ease-in-out;
 }
 
 .nested-2{
@@ -203,6 +244,7 @@ textarea{
  background-color:black;
  color: white;
  border-color: white;
+
 }
 
 .question-btn{
@@ -214,8 +256,16 @@ textarea{
 }
 
 .question-title{
-      display:grid;
-      justify-self: center;
+    display:grid;
+    justify-self: center;
+}
+.question{
+    transition: all 0.7s ease-in-out;
+}
+
+.question:hover{
+    transform: scale(1.1);
+    transition: all 0.7s ease-in-out;
 }
   
 .question-text{
@@ -232,6 +282,5 @@ textarea{
 .show-text .question-btn{
     transform: rotate(180deg)
 }
-#fig_el136161406977059438241091098168 {
-    color: "lightgrey"
-}
+
+
